@@ -1,0 +1,59 @@
+body{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: darkslategrey;
+}
+
+.cuento{
+    display: grid;
+    grid-template-columns: minmax(100px,1fr)1fr;
+    border:2px solid;
+    grid-template-areas: 
+        "titulo titulo"
+        "parrafo imagen"
+        "textofinal textofinal";
+    height: 100%;
+    gap:5px;
+    position: relative
+}
+
+.titulo{
+    grid-area: titulo;
+    /* border:2px solid; */
+    text-align: center;
+    
+}
+.parrafo{
+    grid-area: parrafo;
+    /* border:2px solid; */
+
+}
+.imagen{
+    grid-area:imagen;
+    /* border:2px solid; */
+
+}
+.textofinal{
+    grid-area:textofinal;
+    /* border:2px solid; */
+    text-align: center;
+
+}
+
+h1{
+    justify-content: center;
+    text-decoration: underline;
+}
+p{text-align: justify;}
+a{
+    text-decoration: none;
+    color:black;
+}
+img{
+    display: block;
+    height: auto;
+    max-width: 100%;
+    width: 100%;
+    
+}
