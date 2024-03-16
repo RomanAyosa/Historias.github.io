@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The hitman</title>
+    <link rel="icon" type="icon" href="xmas_cookie_emoji_christmas_icon_260220.ico">
+    <link rel="stylesheet" href="CssStyles/styleindex.css">
+</head>
+<body>
+    <div class="titulo">
+       <a href="Inicio.html" onclick="verificarEnlace(event)">The hitman in the box</a> 
+    </div>
+
+    <script>
+    function verificarEnlace(event) {
+      var enlace = event.target.getAttribute('href');
+
+      if (enlace === "#" || enlace === "") {
+        event.preventDefault(); // Evitar que se realice la acción predeterminada del enlace
+        alert("Este enlace no tiene un destino válido.");
+      }
+      else{
+        alert("Ingresando a un mundo perverso ...\nDiviertete!")
+      }
+    }
+  </script>
+
+</body>
+</html>
