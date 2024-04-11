@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The hitman</title>
+    <link rel="icon" type="icon" href="xmas_cookie_emoji_christmas_icon_260220.ico">
+    <link rel="stylesheet" href="CssStyles/style.css">
+    
+</head>
+<body>
+    <div class="cuento">
+        <div class="titulo">
+            <h2>Un maniatico doctor</h2>
+        </div>
+        <div class="parrafo">
+            <p>
+                
+            </p>
+        </div>
+        <div class="imagen">
+            <img style="height: 500px;" src="img/photo_2024-03-19_09-30-44.jpg" alt="?">
+            <!-- <img src="photo_2024-02-27_22-44-58.jpg" alt=""> -->
+        </div>
+        <div class="textofinal">
+            <a href="#" onclick="verificarEnlace(event)">Onceaba Parte</a>
+        </div>
+    </div>
+    <script>
+    function verificarEnlace(event) {
+      var enlace = event.target.getAttribute('href');
+
+      if (enlace === "#" || enlace === "") {
+        event.preventDefault(); // Evitar que se realice la acción predeterminada del enlace
+        alert("La actualizacion estara disponible el dia miercoles , ten paciencia ....");
+      }
+      else{
+        alert(".... ")
+      }
+    }
+    </script>
+</body>
+</html>
