@@ -1,4 +1,5 @@
-body {
+
+body, html {
   margin: 0;
   padding: 0;
   background-image: url('../img/maxresdefault-2028348461.jpg');
@@ -6,21 +7,40 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   height: 100vh; /* Ajusta la altura según tus necesidades */
+}
+
+.contenedor {
+  width: 80%; /* Puedes ajustar el ancho según sea necesario */
+  max-width: 600px; /* Establece un ancho máximo para evitar que el contenido se estire demasiado en pantallas grandes */
+  margin: auto; /* Centra horizontalmente el contenedor */
   display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white; /* Color del texto para asegurar la legibilidad */
-  font-family: Arial, sans-serif; /* Establece una fuente legible */
+  flex-direction: column;
+  align-items: center; /* Centra los elementos verticalmente */
+  justify-content: center; /* Centra los elementos horizontalmente */
+  height: 100%; /* Esto ayuda a centrar el contenedor verticalmente en la página */
 }
-a{
-    text-decoration: none;
-    color:rgba(134, 2, 2, 0.706);
-}
+
 .titulo {
-  text-align: center;
-  position: relative;
-  z-index: 1;
-  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.Lista ul {
+  display: flex;
+  list-style-type: none;
+  padding:0;
+  gap:7.5px
+}
+
+.Lista li {
+  margin-bottom: 10px;
+}
+
+a{
+  text-decoration: none;
+  /* color:rgba(134, 2, 2, 0.706); */
+  color: red; /* Color rojo para el texto */
+  text-shadow: 2px 2px 0px darkred, -2px -2px 0px darkred; /* Efecto de "sangrado" */
+  font-size: 20px;
 }
 
 .titulo::after {
@@ -37,20 +57,36 @@ a{
   border-radius: 10px;
 }
 
-@keyframes bloodAnimation {
+@keyframes pulsate {
   0% {
-    opacity: 0;
-  }
-  25% {
-    opacity: 0.2;
+    font-size: 1em; /* Tamaño normal */
   }
   50% {
-    opacity: 0.5;
-  }
-  75% {
-    opacity: 0.2;
+    font-size: 1.1em; /* Aumento de tamaño */
   }
   100% {
-    opacity: 0;
+    font-size: 1em; /* Volver al tamaño normal */
   }
+}
+
+.titulo {
+  margin-bottom: 20px;
+  color: red; /* Color rojo para el texto */
+  text-shadow: 2px 2px 0px darkred, -2px -2px 0px darkred; /* Efecto de "sangrado" */
+  animation: pulsate 1s infinite; /* Aplicar la animación */
+}
+
+.Lista ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.Lista li {
+  margin-bottom: 10px;
+}
+
+.Lista li a {
+  color: red; /* Color rojo para los enlaces de la lista */
+  text-shadow: 2px 2px 0px darkred, -2px -2px 0px darkred; /* Efecto de "sangrado" */
+  animation: pulsate 1s infinite; /* Aplicar la animación */
 }

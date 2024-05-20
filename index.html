@@ -8,9 +8,38 @@
     <link rel="stylesheet" href="CssStyles/styleindex.css">
 </head>
 <body>
+  <div class="contenedor">
+
     <div class="titulo">
-       <a href="Inicio.html" onclick="verificarEnlace(event)">The hitman in the box</a> 
+      <a href="Inicio.html" onclick="verificarEnlace(event)">The hitman in the box</a>
     </div>
+
+    <div class="Lista">
+        <ul>
+            <li><a href="Inicio.html">1</a></li>
+            <li><a href="segundaparte.html">2</a></li>
+            <li><a href="terceraparte.html">3</a></li>
+            <li><a href="CuartaParte.html">4</a></li>
+            <li><a href="QuintaParte.html">5</a></li>
+            <li><a href="SextaParte.html">6</a></li>
+            <li><a href="Septimaparte.html">7</a></li>
+            <li><a href="Octavaparte.html">8</a></li>
+            <li><a href="NovenaParte.html">9</a></li>
+            <li><a href="DecimaParte.html">10</a></li>
+            <li><a href="OnceabaParte.html">11</a></li>
+            <li><a href="DoceabaParte.html">12</a></li>
+            <li><a href="TreceabaParte.html">13</a></li>
+            <li><a href="CatorceabaParte.html">14</a></li>
+            <li><a href="QuinceabaParte.html">15</a></li>
+            <li><a href="DiesiseisabaParte.html">16</a></li>
+            <li><a href="DiesisieteabaParte.html">17</a></li>
+            <li><a href="DiesiochoabaParte.html">18</a></li>
+            <li><a href="DiesinueveabaParte.html">19</a></li>
+            <li><a href="VeinteabaParte.html">20</a></li>
+          </ul>
+      </div>
+
+  </div>
 
     <script>
     function verificarEnlace(event) {
@@ -25,6 +54,23 @@
       }
     }
   </script>
+
+  <audio id="audio" autoplay loop >
+    <source src="ruta/de/tu/archivo_de_audio.mp3" type="audio/mpeg">
+    Tu navegador no soporta la etiqueta de audio.
+  </audio>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+  var audio = document.getElementById("audio");
+
+  // Verificar si el audio ya está reproduciéndose
+  if (audio.paused) {
+    audio.play(); // Reproducir solo si está pausado
+  }
+});
+
+
+    </script>
 
 </body>
 </html>
